@@ -1,0 +1,61 @@
+Complexity Analysis of Selection Sort
+Time Complexity: The time complexity of Selection Sort is O(N2) as there are two nested loops:
+
+One loop to select an element of Array one by one = O(N)
+Another loop to compare that element with every other Array element = O(N)
+Therefore overall complexity = O(N) * O(N) = O(N*N) = O(N2)
+Auxiliary Space: O(1) as the only extra memory used is for temporary variables while swapping two values in Array.
+The selection sort never makes more than O(N) swaps and can be useful when memory writing is costly.
+
+
+Advantages of Selection Sort Algorithm
+Simple and easy to understand.
+Works well with small datasets.
+
+
+Disadvantages of the Selection Sort Algorithm
+Selection sort has a time complexity of O(n^2) in the worst and average case.
+Does not work well on large datasets.
+Does not preserve the relative order of items with equal keys which means it is not stable.
+
+
+Complexity = O(n2)
+Also, we can analyze the complexity by simply observing the number of loops. There are 2 loops so the complexity is n*n = n2.
+
+
+Time Complexities:
+Worst Case Complexity: O(n2)
+If we want to sort in ascending order and the array is in descending order then, the worst case occurs.
+Best Case Complexity: O(n2)
+It occurs when the array is already sorted
+Average Case Complexity: O(n2)
+It occurs when the elements of the array are in jumbled order (neither ascending nor descending).
+
+
+The time complexity of the selection sort is the same in all cases. At every step, you have to find the minimum element
+and put it in the right place. The minimum element is not known until the end of the array is not reached.
+Space Complexity:
+Space complexity is O(1) because an extra variable temp is used.
+
+
+Selection Sort Applications
+The selection sort is used when
+
+a small list is to be sorted
+cost of swapping does not matter
+checking of all the elements is compulsory
+cost of writing to a memory matters like in flash memory (number of writes/swaps is O(n) as compared to O(n2) of bubble sort)
+
+
+
+Frequently Asked Questions on Selection Sort
+Q1. Is Selection Sort Algorithm stable?
+
+The default implementation of the Selection Sort Algorithm is not stable. However, it can be made stable. Please
+see the stable Selection Sort for details.
+
+Q2. Is Selection Sort Algorithm in-place?
+
+Yes, Selection Sort Algorithm is an in-place algorithm, as it does not require extra space.
+
+
